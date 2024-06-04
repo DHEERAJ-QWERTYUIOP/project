@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-  --md-dark-color: #958e8e;
+  --md-dark-color: #1d1d1d;
   --dark-color: #171717;
   --light-dark-color: #292929;
-  --yellow-color: #eabb0f;
+  --yellow-color: #d4aa11;
 }
 
 * {
@@ -29,7 +29,7 @@ img {
 
 .wrapper {
   min-height: 100vh;
-  background-color: rgba(144, 146, 202, 0.911);
+  background-color: rgba(144, 202, 174, 0.911);
   font-size: large;
 }
 
@@ -40,8 +40,8 @@ img {
 }
 
 .search-container {
-  background-color: rgba(189, 116, 85, 0.873);
-  height: 100px;
+  background-color: rgba(200, 109, 67, 0.873);
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,9 +51,6 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-.playlistcontainer {
-  background-color: rgba(189, 116, 85, 0.873);
 }
 
 .search-element {
