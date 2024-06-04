@@ -14,6 +14,7 @@ require("./config/passport")(passport);
 app.use("/static", express.static("static"));
 
 // DB Config
+mongoose.set("strictQuery", false);
 const db = `mongodb+srv://dheerajsharmacs21:QBeSHRfq8sJ9lGLt@cluster0.6b3xqi2.mongodb.net/`;
 // Connect to MongoDB
 
@@ -62,4 +63,6 @@ app.use("/users", require("./routes/users.js"));
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, console.log(`Server running on  ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on  ${PORT}`);
+});
